@@ -4,15 +4,15 @@ public class TriangleSidesValidator {
     public void validate(double firstSide, double secondSide, double thirdSide) {
         // Check if any side is zero or negative
         if (firstSide <= 0 || secondSide <= 0 || thirdSide <= 0) {
-            System.out.println("It's not a triangle.");
+            System.out.println("it's not a triangle.");
             return;
         }
 
         // Check if the sum of any two sides is less than or equal to the third side
         if (firstSide + secondSide <= thirdSide || firstSide + thirdSide <= secondSide || secondSide + thirdSide <= firstSide) {
-            System.out.println("It's not a triangle.");
+            System.out.println("it's not a triangle.");
         } else {
-            System.out.println("This is a valid triangle.");
+            System.out.println("this is a valid triangle.");
         }
     }
 }
